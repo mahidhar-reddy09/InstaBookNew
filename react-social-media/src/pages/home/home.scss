@@ -1,0 +1,23 @@
+@import "../../style.scss";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    @include mobile{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+}
+.home{
+    @include themify($themes){
+        background-color: themed("bgSoft");
+        padding: 20px 70px;
+    }
+
+    @include mobile{
+        padding: 10px;
+    }
+}
